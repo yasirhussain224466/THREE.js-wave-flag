@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>flags waves Three.js</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            flags waves
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="flag.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    </head>
+    <body onload="init ()">
+        <h1>flags waves</h1>
+        <main>
+            <div id="left">
+                <div class="meter">
+                    <p>image</p>
+                    <input type="file" id="texture" accept="image/png,image/jpeg,image/gif" onchange="loadTexture(this.files)">
+                </div>
+                <div class="meter">
+                    <p>camera</p>
+                    <input type="range" id="angle" value="0" min="-180" max="180" oninput="setCamera()">
+                    <span id="textAngle">[0°]</span>
+                </div>
+                
+            </div>
+            <div id="right">
+                <div id="renderArea"></div>
+            </div>
+        </main>
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./main.js"></script>
+
+</body>
+</html>
